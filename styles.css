@@ -1,0 +1,298 @@
+/* ═══════════════════════════════════════════════
+   INFANIA PIMENTEL — Portfolio Styles
+   ═══════════════════════════════════════════════ */
+
+:root {
+  /* FONTS */
+  --font-script:   "Ballet", cursive;
+  --font-initial:  "Mea Culpa", cursive;
+  --font-body:     "Amiri", serif;
+
+  /* SIZES */
+  --font-name:     52px;
+  --font-role:     16px;
+  --font-nav:      15px;
+  --font-btn:      13px;
+  --font-body-sz:  17px;
+
+  /* COLORS */
+  --color-page:    #e1dededb;
+  --border-color:   #efefef;
+  --color-dark:    #111111;
+  --color-crimson: #860000;
+  --color-btn-bg:  rgba(255, 255, 255, 0.92);
+  --color-nav:     #1a1a1a;
+
+  /* SPACING */
+  --btn-w:         260px;
+  --btn-h:         48px;
+  --btn-radius:    13px;
+}
+
+/* ─── RESET ─────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── BODY ───────────────────────────────────── */
+body {
+  font-family: var(--font-body);
+  background: var(--color-page);
+  color: var(--color-dark);
+  font-size: var(--font-body-sz);
+  line-height: 1.7;
+}
+
+/* ─── HERO ───────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 66vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+  z-index: 0;
+
+}
+.hero-media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+
+  /* MOVE your transform here */
+  transform: translateY(-8%) translateX(1%) scale(1.1);
+  transform-origin: center top;
+}
+/* Single overlay — stacks nav, identity, buttons top-to-bottom */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 28px 44px 48px;
+  pointer-events: none;
+
+}
+
+
+/* ─── TOP NAV ─────────────────────────────────── */
+.top-nav {
+  align-self: flex-end;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-nav);
+  font-family: var(--font-body);
+  font-size: var(--font-nav);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-crimson);
+}
+
+/* ─── IDENTITY (name + role) ─────────────────── */
+.hero-identity {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.name {
+  font-size: var(--font-name);
+  line-height: 1;
+  display: inline-block;
+  color: var(--color-dark);
+}
+
+.initial {
+  font-family: var(--font-initial);
+  display: inline-block;
+  margin-right: -8px;
+  transform: rotate(-1deg) translateY(-2px);
+  font-size: calc(var(--font-name) * 1.05);
+  color: var(--color-dark);
+}
+
+.rest {
+  font-family: var(--font-script);
+}
+
+.role {
+  margin-top: 20px;
+  font-family: var(--font-body);
+  font-size: var(--font-role);
+  font-weight: 400;
+  letter-spacing: 6px;
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+
+/* ─── HERO BUTTONS ───────────────────────────── */
+.hero-buttons {
+  display: flex;
+  gap: 65px;
+  margin-top: auto;
+  margin-bottom: 6vh;
+}
+
+.btn {
+  width: clamp(200px, 28vw, 290px);
+  height: var(--btn-h);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-btn-bg);
+  color: var(--color-crimson);
+
+  font-family: var(--font-body);
+  font-size: var(--font-btn);
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-radius: var(--btn-radius);
+  box-shadow: 0 4px 24px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.08);
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #5a0000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* ─── LED HOTSPOTS ───────────────────────────── */
+.led-hotspots {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: all;
+}
+
+.led-spot {
+  position: absolute;
+  width: 5%;
+  height: 20%;
+  transform: translate(-65%, -40%);
+  cursor: pointer;
+
+  /* DEBUG */
+  background: rgba(255, 0, 0, 0.25);
+}
+
+/* Each LED's position — tune top/left/width/height to your image */
+.led-spot[data-led="1"]  { left: 7.44%;  top: 60.5%; }
+.led-spot[data-led="2"]  { left: 14.11%; top: 62.5%; }
+.led-spot[data-led="3"]  { left: 21.00%; top: 63.5%; }
+.led-spot[data-led="4"]  { left: 28.00%; top: 62.5%; }
+.led-spot[data-led="5"]  { left: 34.12%; top: 61.2%; }
+.led-spot[data-led="6"]  { left: 40.49%; top: 61.5%; }
+.led-spot[data-led="7"]  { left: 47.21%; top: 65.5%; }
+.led-spot[data-led="8"]  { left: 54.04%; top: 65.8%; }
+.led-spot[data-led="9"]  { left: 60.30%; top: 63.0%; }
+.led-spot[data-led="10"] { left: 67.55%; top: 62.5%; }
+.led-spot[data-led="11"] { left: 73.54%; top: 62.0%; }
+.led-spot[data-led="12"] { left: 80.15%; top: 62.2%; }
+.led-spot[data-led="13"] { left: 86.58%; top: 62.3%; }
+.led-spot[data-led="14"] { left: 93.18%; top: 60.5%; }
+
+/* ─── ABOUT ──────────────────────────────────── */
+.about {
+  background: var(--color-page);
+  padding: 100px 0;
+  border-top: 8px solid var(--border-color);
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 195px 1fr;
+  gap: 0px 80px;
+  width: 910px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.about-heading {
+  font-family: var(--font-body);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--color-dark);
+  letter-spacing: 0.02em;
+  padding-top: 4px;
+}
+
+.about-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.85;
+  color: #333;
+}
+
+
+
+
+
+
+/* ─── RESPONSIVE ─────────────────────────────── */
+@media (max-width: 1000px) {
+  .hero-buttons {
+    gap: 20px;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+
+  .about-inner {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero-buttons {
+    gap: 12px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  :root {
+    --font-name: 38px;
+  }
+
+  .hero-overlay {
+    padding: 18px 20px 36px;
+  }
+}

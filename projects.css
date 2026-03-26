@@ -223,13 +223,12 @@
 
 .gallery-placeholder {
   width: 100%;
-  aspect-ratio: 16/9;
-  background: #d0d0d0;
+  height: 280px;
+  object-fit: contain;
+  object-position: center;
+  background: #f0f0f0;
   border-radius: 4px;
-}
-
-.gallery-item--wide .gallery-placeholder {
-  aspect-ratio: 21/9;
+  display: block;
 }
 
 .gallery-caption {

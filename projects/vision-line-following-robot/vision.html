@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision-Based Line Following Robot — Infania Pimentel</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav--page">
+    <div class="site-nav-left">
+      <a href="../../index.html" class="site-nav-name">Infania Pimentel</a>
+    </div>
+    <div class="site-nav-right">
+      <a href="../../index.html" class="work-nav-link">Home</a>
+      <a href="../../work.html" class="work-nav-link active">Work</a>
+      <a href="#" class="work-nav-link">Resume</a>
+      <a href="#" class="work-nav-link">Contact</a>
+      <span class="site-nav-divider"></span>
+      <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="proj-hero-img">
+  <img src="CameraPositioningDownwardSide.jpg" alt="Vision-based line following robot" style="object-position: center 30%;">
+</div>
+
+  <!-- ── PROJECT HEADER ── -->
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <a href="../../work.html" class="proj-back">← Back to Work</a>
+      <div class="proj-meta">
+        <span class="proj-category">Robotics</span>
+        <span class="proj-meta-divider">·</span>
+        <span class="proj-year">2024</span>
+      </div>
+      <h1 class="proj-title">Vision-Based Line Following Robot</h1>
+      <p class="proj-subtitle">Autonomous robot that follows colored lines through a maze using a camera and real-time image processing — no dedicated color sensor.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Raspberry Pi</span>
+        <span class="proj-tag">OpenCV</span>
+        <span class="proj-tag">Picamera2</span>
+        <span class="proj-tag">Differential Drive</span>
+        <span class="proj-tag">Computer Vision</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="proj-main">
+
+    <!-- ── OVERVIEW ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Overview</div>
+        <div class="proj-section-content">
+          <p>This project built on an earlier line-following robot, replacing the dedicated color sensor with a camera-based vision system. The goal remained the same — navigate a maze with multiple colored lines and follow only the target path — but the sensing approach shifted entirely to real-time image processing.</p>
+          <p>The hardware used two DC motors driven by a Raspberry Pi via GPIO pins. A downward-facing camera captured live frames processed through OpenCV: grayscale conversion, Gaussian blur, and thresholding isolated the line, while contour detection identified the largest path region and computed its centroid.</p>
+          <p>Steering logic compared centroid position to the frame center — forward when centered, left or right when shifted, and a recovery behavior when no line was detected. All motion control including speed, direction, and continuous movement was programmed in Python using edge detection.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS / TOOLS ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Skills & Tools</div>
+        <div class="proj-section-content">
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Hardware</h4>
+              <ul>
+                <li>Raspberry Pi</li>
+                <li>Picamera2</li>
+                <li>DC Motors</li>
+                <li>L298N Driver</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Vision</h4>
+              <ul>
+                <li>OpenCV</li>
+                <li>Thresholding</li>
+                <li>Contour Detection</li>
+                <li>Centroid Tracking</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Software</h4>
+              <ul>
+                <li>Python</li>
+                <li>GPIO Control</li>
+                <li>PWM Speed Control</li>
+                <li>Edge Detection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PHOTO GALLERY ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Gallery</div>
+        <div class="proj-section-content">
+          <div class="proj-gallery">
+            <div class="gallery-item gallery-item--wide">
+              <img src="CameraPositioningDownwardFront.jpg" alt="Camera positioning front" class="gallery-placeholder">
+              <span class="gallery-caption">Camera mounted downward — front view</span>
+            </div>
+            <div class="gallery-item">
+              <img src="CameraPositioningDownwardSide.jpg" alt="Camera positioning side" class="gallery-placeholder">
+              <span class="gallery-caption">Camera mounted downward — side view</span>
+            </div>
+            <div class="gallery-item">
+              <img src="BaseHoldingSensorAndWheelDowelsTopCAD.jpeg" alt="Base CAD top" class="gallery-placeholder">
+              <span class="gallery-caption">Base CAD — top view</span>
+            </div>
+            <div class="gallery-item">
+              <img src="BaseHoldingSensorAndWheelDowelsBottomCAD.JPEG.jpeg" alt="Base CAD bottom" class="gallery-placeholder">
+              <span class="gallery-caption">Base CAD — bottom view</span>
+            </div>
+            <div class="gallery-item">
+              <img src="DoorCAD.jpg" alt="Door CAD" class="gallery-placeholder">
+              <span class="gallery-caption">Door component CAD</span>
+            </div>
+            <div class="gallery-item">
+              <img src="treeDecorCAD.jpg" alt="Tree decor CAD" class="gallery-placeholder">
+              <span class="gallery-caption">Tree decoration CAD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VIDEO ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Video</div>
+        <div class="proj-section-content">
+          <div class="proj-video-wrap">
+            <video controls>
+              <source src="IMG_1374.mov" type="video/mp4">
+            </video>
+          </div>
+          <p class="proj-video-caption">Robot navigating the colored line maze in real time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CODE ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Code</div>
+        <div class="proj-section-content">
+          <p class="proj-code-intro">Full source including camera capture, OpenCV processing pipeline, and centroid-based motor control.</p>
+          <a href="https://github.com/infaniap/vision-based-line-following-robot" class="proj-code-link" target="_blank">View on GitHub → vision-based-line-following-robot</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── NEXT PROJECT ── -->
+  <div class="proj-next">
+    <a href="../color-sensor-line-following-robot/index.html" class="proj-next-inner">
+      <span class="proj-next-label">Next Project</span>
+      <span class="proj-next-title">Line-Following Robot →</span>
+    </a>
+  </div>
+
+</body>
+</html>

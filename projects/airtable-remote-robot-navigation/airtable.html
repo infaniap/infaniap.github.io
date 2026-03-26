@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airtable Remote Robot Navigation — Infania Pimentel</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav--page">
+    <div class="site-nav-left">
+      <a href="../../index.html" class="site-nav-name">Infania Pimentel</a>
+    </div>
+    <div class="site-nav-right">
+      <a href="../../index.html" class="work-nav-link">Home</a>
+      <a href="../../work.html" class="work-nav-link active">Work</a>
+      <a href="#" class="work-nav-link">Resume</a>
+      <a href="#" class="work-nav-link">Contact</a>
+      <span class="site-nav-divider"></span>
+      <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="proj-hero-img">
+    <img src="RepurposedRoomba.webp" alt="Repurposed Create 3 robot">
+  </div>
+
+  <!-- ── PROJECT HEADER ── -->
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <a href="../../work.html" class="proj-back">← Back to Work</a>
+      <div class="proj-meta">
+        <span class="proj-category">Robotics</span>
+        <span class="proj-meta-divider">·</span>
+        <span class="proj-year">2024</span>
+      </div>
+      <h1 class="proj-title">Airtable Remote Robot Navigation</h1>
+      <p class="proj-subtitle">Cloud-based remote navigation system that controls a Create 3 robot through Airtable commands — no direct interface required.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">ROS2</span>
+        <span class="proj-tag">Airtable API</span>
+        <span class="proj-tag">Create 3</span>
+        <span class="proj-tag">Remote Control</span>
+        <span class="proj-tag">Python</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="proj-main">
+
+    <!-- ── OVERVIEW ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Overview</div>
+        <div class="proj-section-content">
+          <p>This project demonstrated remote navigation using Airtable as a cloud-based command interface to control a repurposed Create 3 robot. The robot navigated a maze from a separate room entirely — no direct connection to the machine required.</p>
+          <p>A ROS2 program established continuous communication between the robot and Airtable's API. Airtable received an array of commands defining linear and angular motion, which could be updated by a client using human-readable language. The program continuously polled Airtable, extracted the latest motion values, and published them to the robot via ROS2's <code>/cmd_vel</code> topic.</p>
+          <p>This created a fully cloud-mediated control loop — linear velocity driving forward/backward motion and angular velocity handling turns — enabling real-time remote navigation based on client instructions from anywhere.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS / TOOLS ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Skills & Tools</div>
+        <div class="proj-section-content">
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Hardware</h4>
+              <ul>
+                <li>iRobot Create 3</li>
+                <li>ROS2 Compatible</li>
+                <li>Onboard Navigation</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Software</h4>
+              <ul>
+                <li>ROS2</li>
+                <li>Python</li>
+                <li>Airtable API</li>
+                <li>API Polling</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Systems</h4>
+              <ul>
+                <li>Cloud Control</li>
+                <li>cmd_vel Interface</li>
+                <li>Remote Navigation</li>
+                <li>Human-Readable Commands</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VIDEO ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Video</div>
+        <div class="proj-section-content">
+          <div class="proj-video-wrap">
+            <video controls>
+              <source src="airtableCommands.mov" type="video/mp4">
+            </video>
+          </div>
+          <p class="proj-video-caption">Robot navigating the maze via Airtable commands sent from a separate room.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CODE ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Code</div>
+        <div class="proj-section-content">
+          <p class="proj-code-intro">Full source including ROS2 node, Airtable API polling loop, and velocity command mapping.</p>
+          <a href="https://github.com/infaniap/airtable-remote-robot-navigation" class="proj-code-link" target="_blank">View on GitHub → airtable-remote-robot-navigation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── NEXT PROJECT ── -->
+  <div class="proj-next">
+    <a href="../vision-line-following-robot/index.html" class="proj-next-inner">
+      <span class="proj-next-label">Next Project</span>
+      <span class="proj-next-title">Vision-Based Line Following Robot →</span>
+    </a>
+  </div>
+
+</body>
+</html>

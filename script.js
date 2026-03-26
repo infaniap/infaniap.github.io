@@ -92,17 +92,16 @@ if (filterBtns.length) {
 // ═══════════════════════════════════════════════
 // CURTAIN WIPE TRANSITION
 // ═══════════════════════════════════════════════
+// ─── CURTAIN WIPE TRANSITION ──────────────────
 const curtain = document.querySelector('.curtain');
 
 if (curtain) {
-  // Reveal on page load
   window.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(() => {
       curtain.classList.add('reveal');
     });
   });
 
-  // Slide up on internal link click
   document.querySelectorAll('a[href]').forEach(link => {
     const href = link.getAttribute('href');
     if (!href || href === '#' || href.startsWith('http') || href.startsWith('mailto')) return;

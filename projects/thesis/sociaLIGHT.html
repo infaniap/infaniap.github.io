@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SociaLIGHT — Infania Pimentel</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav--page">
+    <div class="site-nav-left">
+      <a href="../../index.html" class="site-nav-name">Infania Pimentel</a>
+    </div>
+    <div class="site-nav-right">
+      <a href="../../index.html" class="work-nav-link">Home</a>
+      <a href="../../work.html" class="work-nav-link active">Work</a>
+      <a href="#" class="work-nav-link">Resume</a>
+      <a href="#" class="work-nav-link">Contact</a>
+      <span class="site-nav-divider"></span>
+      <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="proj-hero-img">
+    <img src="figmaSociaLIGHTICON.jpg" alt="SociaLIGHT wearable devices">
+  </div>
+
+  <!-- ── PROJECT HEADER ── -->
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <a href="../../work.html" class="proj-back">← Back to Work</a>
+      <div class="proj-meta">
+        <span class="proj-category">Interaction Systems · Human Factors</span>
+        <span class="proj-meta-divider">·</span>
+        <span class="proj-year">2024</span>
+      </div>
+      <h1 class="proj-title">SociaLIGHT</h1>
+      <p class="proj-subtitle">A wearable system that makes conversation intent visible, so starting a conversation requires less effort than avoiding one.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Wearable</span>
+        <span class="proj-tag">Behavioral Design</span>
+        <span class="proj-tag">ESP32</span>
+        <span class="proj-tag">NFC</span>
+        <span class="proj-tag">Human Factors</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="proj-main">
+
+    <!-- ── OVERVIEW ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Overview</div>
+        <div class="proj-section-content">
+          <p>Starting conversations with strangers is often avoided not because people do not want to connect, but because the effort of starting feels higher than the effort of staying silent. Phones make that worse by pulling attention inward at the exact moment outward presence matters.</p>
+          <p>SociaLIGHT is a wearable system designed to lower that barrier. Users select a conversation prompt mapped to a color state, then transfer it to the wearable with a single NFC tap. The device displays that state on a quadrant layout others can read at a glance.</p>
+          <p>Built as a Human Factors thesis project, the system was prototyped, deployed, and evaluated in a live social study using about 30 devices. The clearest finding was that visibility mattered more than perfect interpretation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">How It Works</div>
+        <div class="proj-section-content">
+          <p>A participant selects a physical prompt card. That selection maps to a color state and is transferred to the wearable through a single NFC tap. The display updates immediately, with no phone, pairing, or app flow involved.</p>
+          <p>Others read the signal at a glance and use it as an opening to approach. The device does not mediate the conversation, it reduces the friction of starting one. The quadrant layout supports multiple states without making the interaction harder to use.</p>
+          <p>Input (prompt card) → NFC transfer → Wearable display → Social interpretation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MY ROLE ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">My Role</div>
+        <div class="proj-section-content">
+          <p>I owned the project end to end, from concept through deployment. I designed the system, prototyped and assembled about 30 wearable devices, wrote the embedded firmware, designed the study, obtained IRB approval, recruited participants, facilitated sessions, and analyzed the results. Pilot behavior and hardware issues directly shaped later design and firmware decisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Gallery</div>
+        
+        <div class="proj-section-content">
+            <div class="proj-gallery">
+                <div class="gallery-item">
+                <img src="entiresystem.jpg" alt="Zodiac prompt card with wearable" class="gallery-placeholder">
+                <span class="gallery-caption">Prompt card and wearable — the full interaction in one object</span>
+                </div>
+                <div class="gallery-item">
+                <img src="close.jpg" alt="Close up" class="gallery-placeholder">
+                <span class="gallery-caption">Prompt card and wearable — the full interaction in one object</span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+      <section class="proj-section">
+  <div class="proj-section-inner">
+    <div class="proj-section-label">Video</div>
+    <div class="proj-section-content">
+      <div class="proj-video-wrap">
+        <video controls>
+          <source src="nfcpaper.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="proj-video-caption">Early iteration — NFC stickers embedded in laminated paper prompt cards</p>
+
+      <div class="proj-video-wrap" style="margin-top: 24px;">
+        <video controls>
+          <source src="tech.mov" type="video/mp4">
+        </video>
+      </div>
+      <p class="proj-video-caption">Final system — wooden prompt holder with attached cards, sleeker form factor</p>
+    </div>
+  </div>
+</section>
+    </section>
+
+    <!-- ── TAKEAWAY ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Takeaway</div>
+        <div class="proj-section-content">
+          <p>People used the device to start conversations even when they were not fully sure what a color meant. The signal did not need to be perfectly legible to be useful, it needed to be visible enough to invite approach.</p>
+          <p>The main gap was learnability. A next version would focus on making the system easier to interpret without adding setup friction, then testing whether the behavior holds outside a structured study setting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Skills & Tools</div>
+        <div class="proj-section-content">
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Hardware & Software</h4>
+              <ul>
+                <li>ESP32 (XIAO)</li>
+                <li>NFC — PN532</li>
+                <li>GC9A01 Display</li>
+                <li>Embedded Programming</li>
+                <li>MicroPython</li>
+                <li>NFC / BLE Protocols</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Design & Research</h4>
+              <ul>
+                <li>Interaction Design</li>
+                <li>Behavioral Design</li>
+                <li>Experimental Design</li>
+                <li>IRB Protocol</li>
+                <li>Human Factors</li>
+                <li>Wearable Prototyping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── NEXT PROJECT ── -->
+  <div class="proj-next">
+    <a href="../barista/index.html" class="proj-next-inner">
+      <span class="proj-next-label">Next Project</span>
+      <span class="proj-next-title">Robotic Café →</span>
+    </a>
+  </div>
+
+</body>
+</html>

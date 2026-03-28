@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentize — Infania Pimentel</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav--page">
+    <div class="site-nav-left">
+      <a href="../../index.html" class="site-nav-name">Infania Pimentel</a>
+    </div>
+    <div class="site-nav-right">
+      <a href="../../index.html" class="work-nav-link">Home</a>
+      <a href="../../work.html" class="work-nav-link active">Work</a>
+      <a href="#" class="work-nav-link">Resume</a>
+      <a href="#" class="work-nav-link">Contact</a>
+      <span class="site-nav-divider"></span>
+      <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="proj-hero-img">
+    <img src="landingPage_hoveredComponent.png" alt="Componentize system in use">
+  </div>
+
+  <!-- ── PROJECT HEADER ── -->
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <a href="../../work.html" class="proj-back">← Back to Work</a>
+      <a href="https://infania.pyscriptapps.com/componentize/latest/index.html" class="proj-live-btn" target="_blank">↗ View Live Site</a>
+      <div class="proj-meta">
+        <span class="proj-category">Interaction Systems · Developer Tooling</span>
+        <span class="proj-meta-divider">·</span>
+        <span class="proj-year">2023 — Present</span>
+      </div>
+      <h1 class="proj-title">Componentize</h1>
+      <p class="proj-subtitle">A modular web component library that connects hardware and browser interfaces through reusable, real-time modules.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">ESP32</span>
+        <span class="proj-tag">WebSockets</span>
+        <span class="proj-tag">BLE</span>
+        <span class="proj-tag">PyScript</span>
+        <span class="proj-tag">JavaScript</span>
+        <span class="proj-tag">System Architecture</span>
+      </div>
+
+    </div>
+  </div>
+
+  <main class="proj-main">
+
+    <!-- ── OVERVIEW ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Overview</div>
+        <div class="proj-section-content">
+          <p>Building interactive systems that connect hardware to browser interfaces is repetitive by default. Every project requires rewriting communication logic from scratch — BLE pairing, serial handling, WebSocket channels, input routing. None of it carries over.</p>
+          <p>Componentize is a modular web component library built at Tufts CEEO that encapsulates each of those capabilities into a reusable, composable unit. BLE, Serial, Channel, Webcam, Speech, and Plotly each exist as a standalone component with a standardized interface — inputs, outputs, and events — that can be dropped into any project and wired together in minutes.</p>
+          <p>The result is a working library used in research, education, and rapid prototyping. It changes the question from "how do I connect this hardware to a browser?" to "which components do I need?"</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">How It Works</div>
+        <div class="proj-section-content">
+          <p>Each component wraps a single capability and exposes a consistent interface. Components communicate through shared WebSocket channels, keeping the browser and hardware synchronized in real time. The data flow is straightforward:</p>
+          <p style="font-family: var(--font-btn-font); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #888; margin: 24px 0;">Input (sensor / user / device) → component → channel → UI or hardware output</p>
+          <p>Combining components is what makes the system useful. A webcam component feeds into a channel component which streams to a remote display. A serial component reads sensor data and pipes it to a Plotly component for live visualization. Speech input triggers a channel event that controls a connected device. Each combination is a working system built from parts that already exist.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHAT I BUILT ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">What I Built</div>
+        <div class="proj-section-content">
+          <p>I designed and implemented the modular component architecture and built out the core component set: BLE, Serial, Channel, Webcam, Speech, and Plotly. Each component required designing a standardized interface — inputs, outputs, event callbacks — that works consistently whether the component is used alone or in combination with others.</p>
+          <p>Beyond individual components, I built combined demo systems to validate that cross-component communication actually worked under real conditions: webcam streaming through a channel to a remote display, serial sensor data piped into live Plotly charts, speech input controlling connected hardware. I also integrated PyScript to enable Python-in-browser execution, which opened the system to a wider audience of students and researchers who work primarily in Python.</p>
+          <p>A significant portion of the work was making the system usable — not just functional. That meant building documentation, refining the developer experience, and iterating on interfaces based on how non-expert users actually interacted with the components.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── AI INTEGRATION ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">AI Integration</div>
+        <div class="proj-section-content">
+          <p>The component library includes a built-in AI assistant that understands the system's structure. Rather than giving generic answers, it references the actual available components, their inputs, outputs, and events, and suggests how to assemble them for a given task. It's file-aware and provides minimal, targeted edits rather than full rewrites.</p>
+          <p>This was possible because the component interfaces were designed to be machine-readable from the start — standardized naming, consistent structure, and a component manifest that the assistant queries at runtime. The assistant doesn't replace understanding the system; it reduces the time between having an idea and having a working prototype.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Gallery</div>
+        <div class="proj-section-content">
+          <div class="proj-gallery">
+            <div class="gallery-item gallery-item--wide">
+                <img src="landingPage_hoveredComponent.png" alt="TCL landing page" class="gallery-placeholder">
+                <span class="gallery-caption">Component library landing page — hovering reveals component details</span>
+            </div>
+            <div class="gallery-item">
+                <img src="demoChannels.png" alt="Channels demo" class="gallery-placeholder">
+                <span class="gallery-caption">Channel component demo — real-time WebSocket messaging between devices</span>
+            </div>
+            <div class="gallery-item">
+                <img src="devTabSetupTab.png" alt="Dev tab setup" class="gallery-placeholder">
+                <span class="gallery-caption">Developer setup tab — component configuration and connection management</span>
+            </div>
+            <div class="gallery-item">
+                <img src="aiwindow.png" alt="AI assistant window" class="gallery-placeholder">
+                <span class="gallery-caption">Built-in AI assistant — references component manifest to suggest configurations</span>
+            </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- ── TAKEAWAY ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Takeaway</div>
+        <div class="proj-section-content">
+          <p>Modular systems reduce development time not by doing less work, but by making sure the same work doesn't get done twice. Standardized interfaces are what make components composable — without them, every connection is a custom integration problem.</p>
+          <p>The AI assistant reinforced this: it only works because the interfaces are consistent enough to be interpretable. Designing for reuse and designing for machine legibility turned out to be the same decision. That changed how I think about system architecture generally — the abstractions you choose early determine what the system can become later.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Skills & Tools</div>
+        <div class="proj-section-content">
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Hardware & Systems</h4>
+              <ul>
+                <li>ESP32</li>
+                <li>BLE / Serial / UART</li>
+                <li>WebSocket</li>
+                <li>Embedded Integration</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Software</h4>
+              <ul>
+                <li>JavaScript</li>
+                <li>PyScript</li>
+                <li>Python</li>
+                <li>MicroPython</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Design</h4>
+              <ul>
+                <li>System Architecture</li>
+                <li>API Design</li>
+                <li>Developer UX</li>
+                <li>Interaction Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── NEXT PROJECT ── -->
+  <div class="proj-next">
+    <a href="../socialight/index.html" class="proj-next-inner">
+      <span class="proj-next-label">Next Project</span>
+      <span class="proj-next-title">SociaLIGHT →</span>
+    </a>
+  </div>
+
+</body>
+</html>

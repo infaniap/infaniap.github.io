@@ -82,12 +82,32 @@ if (filterBtns.length) {
       btn.classList.add('active');
       const filter = btn.dataset.filter;
       cards.forEach(card => {
-        const match = filter === 'all' || card.dataset.category === filter;
+        const categories = card.dataset.category.split(' ');
+        const match = filter === 'all' || categories.includes(filter);
         card.classList.toggle('hidden', !match);
       });
     });
   });
 }
+// ─── LIGHTBOX ─────────────────────────────────
+const overlay = document.createElement('div');
+overlay.className = 'lightbox-overlay';
+const lightboxImg = document.createElement('img');
+overlay.appendChild(lightboxImg);
+document.body.appendChild(overlay);
+
+document.querySelectorAll('.gallery-placeholder').forEach(img => {
+  if (img.tagName !== 'IMG') return;
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    overlay.classList.add('active');
+  });
+});
+
+overlay.addEventListener('click', () => {
+  overlay.classList.remove('active');
+});
 
 // ═══════════════════════════════════════════════
 // CURTAIN WIPE TRANSITION

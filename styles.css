@@ -531,8 +531,8 @@ a.project-card {
 
 @media (max-width: 700px) {
   .hero-band { flex-wrap: wrap; gap: 12px; }
-  .top-social { right: 20px; }
 }
+
 .mobile-only { display: none; }
 
 @media (max-width: 600px) {

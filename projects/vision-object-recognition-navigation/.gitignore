@@ -1,0 +1,34 @@
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.myenv/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# ROS2
+build/
+install/
+log/
+
+# ML models (large files)
+*.h5
+*.tflite
+
+# Data / labels (optional if large or generated)
+*.csv
+*.json
+
+# Temp / misc
+*.tmp
+*.swp

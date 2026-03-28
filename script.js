@@ -134,3 +134,17 @@ if (curtain) {
     });
   });
 }
+
+// Touch support for LED hotspots
+if (heroImg) {
+  document.querySelectorAll('.led-spot').forEach(spot => {
+    spot.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      if (resetTimeout) clearTimeout(resetTimeout);
+      heroImg.src = `assets/photos/ledsp${spot.dataset.led}.png`;
+    });
+    spot.addEventListener('touchend', () => {
+      resetTimeout = setTimeout(() => { heroImg.src = base; }, 300);
+    });
+  });
+}

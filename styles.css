@@ -534,12 +534,40 @@ a.project-card {
   .top-social { right: 20px; }
 }
 
+@me.mobile-only { display: none; }
+
 @media (max-width: 600px) {
   :root { --font-name: 32px; }
-  .work-grid { grid-template-columns: 1fr; }
-  .hero-identity { padding: 20px 20px 16px; }
-}
 
+  .top-social { display: none; }
+  .mobile-only { display: flex; }
+
+  .hero-identity {
+    padding: 40px 20px 20px;
+  }
+
+  .hero-band {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 20px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .about-inner {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-photo {
+    width: 100%;
+    height: 260px;
+  }
+}
 
 body {
   animation: fadeIn 0.3s ease;
@@ -548,4 +576,53 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
+}dia (max-width: 600px) {
+  :root { --font-name: 32px; }
+
+  /* hide top social on mobile — links are in the nav band already */
+  .top-social { display: none; }
+
+  /* tighten identity */
+  .hero-identity {
+    padding: 40px 20px 20px;
+  }
+
+  /* stack buttons vertically */
+  .hero-band {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 20px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* about section full width */
+  .about-inner {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-photo {
+    width: 100%;
+    height: 260px;
+  }
+}
+
+body {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.mobile-only { display: none; }
+
+@media (max-width: 600px) {
+  .mobile-only { display: flex; }
 }

@@ -533,13 +533,19 @@ a.project-card {
   .hero-band { flex-wrap: wrap; gap: 12px; }
   .top-social { right: 20px; }
 }
-
 .mobile-only { display: none; }
 
 @media (max-width: 600px) {
   :root { --font-name: 32px; }
 
-  .top-social { display: none; }
+  .top-social {
+    position: relative;
+    top: unset;
+    right: unset;
+    justify-content: center;
+    padding: 8px 0 4px;
+  }
+
   .mobile-only { display: flex; }
 
   .hero-identity {
@@ -576,8 +582,4 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
-}
-
-body {
-  animation: fadeIn 0.3s ease;
 }

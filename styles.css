@@ -575,13 +575,12 @@ a.project-card {
     width: 92%;
     grid-template-columns: 1fr;
     gap: 24px;
+    justify-items: center;
   }
 
    .about-photo {
     width: 140px;
     height: 170px;
-    display: block;
-    margin: 0 auto 24px;
   }
 }
 

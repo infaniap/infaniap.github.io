@@ -586,20 +586,7 @@ a.project-card {
   .about-text {
     text-align: left;
   }
-  .site-nav--page {
-  flex-wrap: wrap;
-  padding: 14
-  px 20px;
-  gap: 12px;
-}
-.site-nav-right {
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: flex-start;
-}
-.site-nav-divider {
-  display: none;
-}
+  
 }
 
 body {

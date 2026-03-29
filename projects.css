@@ -373,16 +373,13 @@
 
 .proj-next-inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 860px;
+  gap: 16px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 48px 0;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
 }
-
-.proj-next-inner:hover { opacity: 0.6; }
 
 .proj-next-label {
   font-family: var(--font-btn-font);
@@ -392,10 +389,8 @@
   color: rgba(17, 17, 17, 0.4);
 }
 
-.proj-next-title {
-  font-family: var(--font-body);
-  font-size: 22px;
-  color: var(--color-dark);
+.btn-next {
+  width: clamp(200px, 24vw, 280px);
 }
 
 .proj-video-wrap {
@@ -407,6 +402,25 @@
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 12px;
+}
+
+.nav-back {
+  font-family: var(--font-btn-font);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-dark);
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  border-radius: 2px;
+  padding: 6px 14px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-back:hover {
+  background: var(--color-dark);
+  color: #fff;
+  border-color: var(--color-dark);
 }
 
 /* ─── RESPONSIVE ─────────────────────────────── */

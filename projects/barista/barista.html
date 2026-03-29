@@ -63,7 +63,7 @@
       <div class="proj-section-inner">
         <div class="proj-section-label">Overview</div>
         <div class="proj-section-content">
-          <p>This was a multi-team final project to build a fully autonomous café — from order intake to latte delivery — with no human involvement in operations. Four teams each owned a distinct subsystem: transport, coffee brewing, milk frothing, and latte art. I was part of the Milk Frothing team.</p>
+          <p>This was a multi-team final project to build a fully autonomous café, from order intake to latte delivery, with no human involvement in operations. Four teams each owned a distinct subsystem: transport, coffee brewing, milk frothing, and latte art. I was part of the Milk Frothing team.</p>
           <p>Our subsystem was responsible for dispensing a precise 8oz volume of oat milk, frothing it autonomously, and delivering it into the espresso cup. Fluid delivery was handled by a peristaltic pump, chosen for its ability to meter exact volumes without direct contact between the pump mechanism and the fluid. The milk frother was directly wired into the control circuit, bypassing its native power supply to enable programmatic activation.</p>
           <p>To facilitate the pour, a worm gear mechanism controlled the angular tilt of the cup, allowing the frothed milk to be deposited gradually so the foam layer settled on top of the espresso. Stepper motors provided the precise positional control needed for repeatable cup orientation. The system also included a secondary fluid line for an automated cleaning cycle between runs.</p>
         </div>
@@ -126,28 +126,40 @@
       </div>
     </section>
 
-    <!-- ── VIDEO ── -->
-    <!-- Uncomment when uploaded to YouTube -->
-    <!--
-    <section class="proj-section proj-section--alt">
-      <div class="proj-section-inner">
-        <div class="proj-section-label">Video</div>
-        <div class="proj-section-content">
-          <div class="proj-video-wrap">
-            <iframe
-              src="https://www.youtube.com/embed/VIDEO_ID"
-              title="Robotic Café demo"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p class="proj-video-caption">Full café run — milk dispensing, frothing, and pour sequence.</p>
-        </div>
+    <!-- ── VIDEOS ── -->
+<section class="proj-section">
+  <div class="proj-section-inner">
+    <div class="proj-section-label">Video</div>
+    <div class="proj-section-content">
+      
+      <!-- Full Demo -->
+      <div class="proj-video-wrap">
+        <iframe 
+          src="https://www.youtube.com/embed/cevUbaET7YY" 
+          title="Autonomous Barista Full Demo"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
       </div>
-    </section>
-    -->
+      <p class="proj-video-caption">Full execution of the autonomous barista, from coffee ordering to delivery.</p>
 
+      <!-- Short Process Overview -->
+      <div class="proj-video-wrap" style="margin: 32px auto 10px;">
+        <iframe 
+          src="https://www.youtube.com/embed/-4E2qUfvlkE" 
+          title="Barista Process Overview"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          style="aspect-ratio: 9/16; width: 100%;">
+        </iframe>
+      </div>
+      <p class="proj-video-caption">Quick overview of the build process.</p>
+
+    </div>
+  </div>
+</section>
   </main>
 
   <!-- ── NEXT PROJECT ── -->

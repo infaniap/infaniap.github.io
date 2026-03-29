@@ -556,14 +556,12 @@ a.project-card {
 
   .hero-identity {
     padding: 40px 20px 20px;
-    order: 1;
   }
 
   .hero-band {
     flex-direction: column;
     gap: 10px;
     padding: 14px 20px;
-    order: 3;
   }
 
   .btn {
@@ -575,10 +573,9 @@ a.project-card {
     width: 92%;
     grid-template-columns: 1fr;
     gap: 24px;
-    justify-items: center;
   }
 
-   .about-photo {
+  .about-photo {
     width: 140px;
     height: 170px;
   }

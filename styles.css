@@ -597,19 +597,7 @@ a.project-card {
     border-bottom: none;
   }
 
-  /* make main nav feel primary */
-  .work-hero .site-nav-right .work-nav-link {
-    font-weight: 500;
-    color: rgba(17, 17, 17, 0.8);
-  }
-
-  /* make social feel secondary */
-  .work-mobile-social .work-nav-link {
-    font-size: 9px;
-    letter-spacing: 2px;
-    color: rgba(17, 17, 17, 0.45);
-  }
-
+  
   .work-hero .site-nav-name { font-size: 28px; }
 .work-hero .site-nav-left {
   order: 1;
@@ -619,7 +607,7 @@ a.project-card {
 .work-mobile-social {
   order: 2;
 
-    display: flex;
+  display: flex;
   width: 100%;
   justify-content: center;
   gap: 28px;
@@ -627,7 +615,7 @@ a.project-card {
   border-bottom: 1px solid var(--border-color);
   }
   .work-hero .site-nav-right {
-      order: 3;
+     order: 3;
 
     justify-content: center;
     flex-wrap: wrap;
@@ -638,6 +626,12 @@ a.project-card {
   .work { padding: 40px 0 60px; }
   .work-filters { flex-wrap: wrap; gap: 8px; }
   .work-grid { grid-template-columns: 1fr; }
+
+  .work-hero .site-nav-right .work-nav-link {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
 
   /* ── ABOUT ── */
   .about-inner {

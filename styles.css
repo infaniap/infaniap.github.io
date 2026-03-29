@@ -515,6 +515,9 @@ a.project-card {
 /* ═══════════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════════ */
+.desktop-only { display: block; }
+.work-mobile-social { display: none; }
+
 @media (max-width: 1000px) {
   .hero-band { gap: 20px; }
 }
@@ -540,6 +543,23 @@ a.project-card {
 
 @media (max-width: 600px) {
   :root { --font-name: 32px; }
+  .desktop-only { display: none; }
+
+  .work-mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .site-nav-right {
+    gap: 14px;
+  }
+
+  .site-nav-name {
+    font-size: 16px;
+  }
+
 
   .top-social {
     position: relative;

@@ -517,6 +517,7 @@ a.project-card {
    ═══════════════════════════════════════════════ */
 .desktop-only { display: block; }
 .work-mobile-social { display: none; }
+.mobile-only { display: none; }
 
 @media (max-width: 1000px) {
   .hero-band { gap: 20px; }
@@ -539,11 +540,13 @@ a.project-card {
   .hero-band { flex-wrap: wrap; gap: 12px; }
 }
 
-.mobile-only { display: none; }
+
 
 @media (max-width: 600px) {
   :root { --font-name: 32px; }
-  .desktop-only { display: none; }
+
+  .desktop-only { display: none !important; }
+  .mobile-only { display: flex; }
 
   .work-mobile-social {
     display: flex;
@@ -557,26 +560,14 @@ a.project-card {
   flex-wrap: wrap;
   gap: 8px;
   padding: 12px 20px;
-}
-
-.work-filters {
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.work-grid {
-  grid-template-columns: 1fr;
-}
-
-
-  .site-nav-right {
-    gap: 14px;
   }
 
-  .site-nav-name {
-    font-size: 16px;
-  }
+  .site-nav-right { gap: 10px; }
+  .site-nav-name { font-size: 15px; }
+  .work-nav-link { font-size: 9px; letter-spacing: 1.5px; }
 
+  .work-filters { flex-wrap: wrap; gap: 8px; }
+  .work-grid { grid-template-columns: 1fr; }
 
   .top-social {
     position: relative;
@@ -586,8 +577,6 @@ a.project-card {
     padding: 12px 0 0;
     order: 2;
   }
-
-  .mobile-only { display: flex; }
 
   .hero-identity {
     padding: 40px 20px 20px;
@@ -620,14 +609,10 @@ a.project-card {
     display: block !important;
   }
 
-  .about-text {
-    text-align: left;
-  }
+  .about-text { text-align: left; }
 }
 
-body {
-  animation: fadeIn 0.3s ease;
-}
+body { animation: fadeIn 0.3s ease; }
 
 @keyframes fadeIn {
   from { opacity: 0; }

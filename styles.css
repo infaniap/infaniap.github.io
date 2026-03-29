@@ -37,7 +37,32 @@ body {
   font-size: var(--font-body-sz);
   line-height: 1.7;
 }
+/* ── WORK PAGE ── */
+  .work-mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 8px 0 12px;
+    border-bottom: 1px solid var(--border-color);
+  }
 
+  .work-hero .site-nav--page {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 16px 8px;
+    border-bottom: none;
+  }
+
+  .work-hero .site-nav-name {
+    font-size: 28px;
+  }
+
+  .work-hero .site-nav-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 /* ═══════════════════════════════════════════════
    TOP SOCIAL (GitHub / LinkedIn)
    ═══════════════════════════════════════════════ */
@@ -300,6 +325,8 @@ body {
   background: #ccc;
 }
 
+
+
 .work-nav-link {
   font-family: var(--font-btn-font);
   font-size: 11px;
@@ -318,6 +345,17 @@ body {
 }
 
 .work-nav-link.active {
+  color: var(--color-dark);
+  border-bottom-color: var(--color-dark);
+}
+
+
+.work-nav-link.social-link {
+  color: rgba(17, 17, 17, 0.35);
+  letter-spacing: 2px;
+}
+
+.work-nav-link.social-link:hover {
   color: var(--color-dark);
   border-bottom-color: var(--color-dark);
 }

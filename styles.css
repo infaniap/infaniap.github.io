@@ -605,7 +605,7 @@ a.project-card {
   justify-content: center;
 }
 .work-mobile-social {
-  order: 1;
+  order: 3;
 
   display: flex;
   width: 100%;

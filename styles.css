@@ -552,6 +552,23 @@ a.project-card {
     padding: 10px 0;
     border-bottom: 1px solid var(--border-color);
   }
+
+  .site-nav--page {
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 20px;
+}
+
+.work-filters {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.work-grid {
+  grid-template-columns: 1fr;
+}
+
+
   .site-nav-right {
     gap: 14px;
   }

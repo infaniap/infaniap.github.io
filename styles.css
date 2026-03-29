@@ -577,10 +577,11 @@ a.project-card {
     gap: 24px;
   }
 
-  .about-photo {
+   .about-photo {
     width: 140px;
     height: 170px;
-    margin: 0 auto;
+    display: block;
+    margin: 0 auto 24px;
   }
 }
 

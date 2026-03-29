@@ -40,130 +40,154 @@
 </header>
 
   <!-- ═══════════════════════════ WORK ═══════════════════════════ -->
-  <section class="work">
-    <div class="work-inner">
+<section class="work">
+  <div class="work-inner">
 
-      <div class="work-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="interaction">Interaction Systems</button>
-        <button class="filter-btn" data-filter="hf">Human Factors</button>
-        <button class="filter-btn" data-filter="robotics">Robotics</button>
-      </div>
+    <div class="work-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="human-centered">Human-Centered Systems</button>
+      <button class="filter-btn" data-filter="robotics">Robotics</button>
+    </div>
 
-      <div class="work-grid">
+    <!-- ── FEATURED PROJECTS ── -->
+    <p class="work-section-label">Featured Projects</p>
+    <div class="work-grid work-grid--featured">
 
-
-        <a class="project-card" data-category="interaction hf"href="projects/thesis/sociaLIGHT.html">
+      <a class="project-card project-card--featured" data-category="human-centered" href="projects/thesis/sociaLIGHT.html">
+        <span class="card-featured-label">Featured</span>
         <div class="card-img">
           <img src="projects/thesis/closeHero.jpg" alt="SociaLIGHT">
         </div>
         <div class="card-body">
-          <span class="card-tag">Interaction Systems</span>
+          <span class="card-tag">Human-Centered</span>
           <h4 class="card-title">SociaLIGHT</h4>
+          <p class="card-tagline">NFC-triggered wearable for social environments</p>
           <p class="card-desc">Wearable system that uses glanceable color signals to reduce friction in social interaction initiation.</p>
         </div>
       </a>
 
-      <a class="project-card" data-category="interaction hf" href="projects/tcl/tcl.html">
+      <a class="project-card project-card--featured" data-category="human-centered" href="projects/tcl/tcl.html">
+        <span class="card-featured-label">Featured</span>
         <div class="card-img">
           <img src="projects/tcl/landingPage_hoveredComponent.png" alt="Componentize TCL">
         </div>
         <div class="card-body">
-          <span class="card-tag">Interaction Systems</span>
+          <span class="card-tag">Human-Centered</span>
           <h4 class="card-title">Componentize</h4>
+          <p class="card-tagline">Browser-to-hardware in one line of code</p>
           <p class="card-desc">Modular web component library connecting hardware and browser interfaces through reusable, real-time modules.</p>
         </div>
       </a>
 
-       <a class="project-card" data-category="interaction hf" href="projects/mailbox/mailbox.html">
-         <div class="card-img">
+      <a class="project-card project-card--featured" data-category="human-centered" href="projects/mailbox/mailbox.html">
+        <span class="card-featured-label">Featured</span>
+        <div class="card-img">
           <img src="projects/mailbox/mbevo.jpg" alt="Mailbox Pairing System">
         </div>
         <div class="card-body">
-          <span class="card-tag">Interaction Systems</span>
+          <span class="card-tag">Human-Centered</span>
           <h4 class="card-title">Mailbox Pairing System</h4>
+          <p class="card-tagline">Proximity-based pairing without screens</p>
           <p class="card-desc">Proximity-based device pairing using RSSI signal strength — no screens, no menus, just physical position.</p>
         </div>
       </a>
-        
-        <a class="project-card" data-category="robotics" href="projects/barista/barista.html">
-          <div class="card-img">
-            <img src="projects/barista/FrontOfMilkSystem.jpg" alt="Robotic Café">
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Robotics</span>
-            <h4 class="card-title">Robotic Café</h4>
-            <p class="card-desc">Automated milk frothing subsystem for a multi-team robotic café — peristaltic pump, worm gear tilt control, and hardwired frother.</p>
-          </div>
-        </a>
-        <a class="project-card" data-category="robotics" href="projects/vision-object-recognition-navigation/visionRecog.html">
-          <div class="card-img">
-            <img src="projects/vision-object-recognition-navigation/RoombaRemodel.jpg" alt="Vision Object Recognition Navigation">
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Robotics</span>
-            <h4 class="card-title">Object Recognition Navigation</h4>
-            <p class="card-desc">Autonomous maze navigation using Teachable Machine object classification and real-time ROS2 motion control.</p>
-          </div>
-        </a>
 
-        <a class="project-card" data-category="robotics" href="projects/airtable-remote-robot-navigation/airtable.html">
-          <div class="card-img">
-            <img src="projects/airtable-remote-robot-navigation/RepurposedRoomba.webp" alt="Airtable Remote Robot Navigation">
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Robotics</span>
-            <h4 class="card-title">Airtable Remote Navigation</h4>
-            <p class="card-desc">Cloud-based robot control using Airtable as a command interface with ROS2 for real-time remote navigation.</p>
-          </div>
-        </a>
-        <a class="project-card" data-category="robotics" href="projects/vision-line-following-robot/vision.html">
-          <div class="card-img">
-            <img src="projects/vision-line-following-robot/lines.png" alt="Vision Line Following Robot">
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Robotics</span>
-            <h4 class="card-title">Vision-Based Line Following</h4>
-            <p class="card-desc">Camera-driven autonomous robot navigating a colored maze using OpenCV contour detection and centroid tracking.</p>
-          </div>
-        </a>
+      <a class="project-card project-card--featured" data-category="robotics" href="projects/barista/barista.html">
+        <span class="card-featured-label">Featured</span>
+        <div class="card-img">
+          <img src="projects/barista/FrontOfMilkSystem.jpg" alt="Robotic Café">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Robotics</span>
+          <h4 class="card-title">Robotic Café</h4>
+          <p class="card-tagline">End-to-end autonomous coffee delivery</p>
+          <p class="card-desc">Automated milk frothing subsystem for a multi-team robotic café — peristaltic pump, worm gear tilt control, and hardwired frother.</p>
+        </div>
+      </a>
 
-        <a class="project-card" data-category="robotics" href="projects/color-sensor-line-following-robot/colorSensor.html">
-          <div class="card-img">
-            <img src="projects/color-sensor-line-following-robot/MarioInspiredFollower.jpg" alt="Line-Following Robot">
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Robotics</span>
-            <h4 class="card-title">Line-Following Robot</h4>
-            <p class="card-desc">Autonomous robot navigating a colored maze using real-time color sensing and differential drive control.</p>
-          </div>
-        </a>
-
-        <a class="project-card" data-category="robotics" href="projects/flagpole-scissor-linkage/flagpole.html">
-          <div class="card-img">
-            <img src="projects/flagpole-scissor-linkage/FullSystemWithMotorRackPinionAndScissor.jpg" alt="Flagpole Scissor Linkage">
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Robotics</span>
-            <h4 class="card-title">Flagpole Scissor Linkage</h4>
-            <p class="card-desc">Rotary-to-linear motion system using a stepper motor, gear train, and scissor linkage for vertical extension.</p>
-          </div>
-        </a>
-
-        <a class="project-card" data-category="robotics" href="projects/robotics-gears/gears.html">
-          <div class="card-img">
-            <img src="projects/robotics-gears/involute.jpg" alt="Robotic Gears">
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Robotics</span>
-            <h4 class="card-title">Involute Gears</h4>
-            <p class="card-desc">Stepper motor–driven gear reduction system animating a Mario character through a 90-degree jump sequence.</p>
-          </div>
-        </a>
-
-      </div>
     </div>
-  </section>
+
+    <!-- ── MORE PROJECTS ── -->
+<p class="work-section-label">More Projects</p>
+
+<div class="work-grid work-grid--secondary">
+
+  <a class="project-card project-card--secondary" data-category="robotics" href="projects/vision-object-recognition-navigation/visionRecog.html">
+    <div class="card-img">
+      <img src="projects/vision-object-recognition-navigation/RoombaRemodel.jpg" alt="Vision Object Recognition Navigation">
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Robotics</span>
+      <h4 class="card-title">Object Recognition Navigation</h4>
+      <p class="card-tagline">ML-powered autonomous maze solving</p>
+      <p class="card-desc">Autonomous maze navigation using Teachable Machine object classification and real-time ROS2 motion control.</p>
+    </div>
+  </a>
+
+  <a class="project-card project-card--secondary" data-category="robotics" href="projects/airtable-remote-robot-navigation/airtable.html">
+    <div class="card-img">
+      <img src="projects/airtable-remote-robot-navigation/RepurposedRoomba.webp" alt="Airtable Remote Robot Navigation">
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Robotics</span>
+      <h4 class="card-title">Airtable Remote Navigation</h4>
+      <p class="card-tagline">Spreadsheet as robot command center</p>
+      <p class="card-desc">Cloud-based robot control using Airtable as a command interface with ROS2 for real-time remote navigation.</p>
+    </div>
+  </a>
+
+  <a class="project-card project-card--secondary" data-category="robotics" href="projects/vision-line-following-robot/vision.html">
+    <div class="card-img">
+      <img src="projects/vision-line-following-robot/lines.png" alt="Vision Line Following Robot">
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Robotics</span>
+      <h4 class="card-title">Vision-Based Line Following</h4>
+      <p class="card-tagline">OpenCV contour tracking in real time</p>
+      <p class="card-desc">Camera-driven autonomous robot navigating a colored maze using OpenCV contour detection and centroid tracking.</p>
+    </div>
+  </a>
+
+  <a class="project-card project-card--secondary" data-category="robotics" href="projects/color-sensor-line-following-robot/colorSensor.html">
+    <div class="card-img">
+      <img src="projects/color-sensor-line-following-robot/MarioInspiredFollower.jpg" alt="Line-Following Robot">
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Robotics</span>
+      <h4 class="card-title">Line-Following Robot</h4>
+      <p class="card-tagline">Color-sensing differential drive control</p>
+      <p class="card-desc">Autonomous robot navigating a colored maze using real-time color sensing and differential drive control.</p>
+    </div>
+  </a>
+
+  <a class="project-card project-card--secondary" data-category="robotics" href="projects/flagpole-scissor-linkage/flagpole.html">
+    <div class="card-img">
+      <img src="projects/flagpole-scissor-linkage/FullSystemWithMotorRackPinionAndScissor.jpg" alt="Flagpole Scissor Linkage">
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Robotics</span>
+      <h4 class="card-title">Flagpole Scissor Linkage</h4>
+      <p class="card-tagline">Rotary-to-linear motion via scissor mechanism</p>
+      <p class="card-desc">Rotary-to-linear motion system using a stepper motor, gear train, and scissor linkage for vertical extension.</p>
+    </div>
+  </a>
+
+  <a class="project-card project-card--secondary" data-category="robotics" href="projects/robotics-gears/gears.html">
+    <div class="card-img">
+      <img src="projects/robotics-gears/involute.jpg" alt="Robotic Gears">
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Robotics</span>
+      <h4 class="card-title">Involute Gears</h4>
+      <p class="card-tagline">Gear reduction animating a Mario jump</p>
+      <p class="card-desc">Stepper motor–driven gear reduction system animating a Mario character through a 90-degree jump sequence.</p>
+    </div>
+  </a>
+
+</div>
+
+  </div>
+</section>
 
 </body>
 </html>

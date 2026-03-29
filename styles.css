@@ -508,6 +508,127 @@ a.project-card {
   color: #444;
 }
 
+
+/* ═══════════════════════════════════════════════
+   FEATURED VS SECONDARY PROJECTS
+   ═══════════════════════════════════════════════ */
+
+/* ── SECTION LABEL ── */
+.work-section-label {
+  font-family: var(--font-btn-font);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.4);
+  margin: 64px 0 24px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-color);
+}
+
+/* ── FEATURED GRID ── */
+.work-grid--featured {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 0;
+}
+
+/* ── FEATURED CARD ── */
+.project-card--featured {
+  position: relative;
+  border: 1px solid rgba(17, 17, 17, 0.15);
+}
+
+.project-card--featured .card-img {
+  height: 300px;
+}
+
+.project-card--featured .card-body {
+  padding: 24px;
+}
+
+.project-card--featured .card-title {
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.project-card--featured .card-tagline {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin: 0 0 12px 0;
+}
+
+.project-card--featured .card-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-featured-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: var(--font-btn-font);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--color-dark);
+  padding: 4px 10px;
+  z-index: 2;
+}
+
+/* ── SECONDARY GRID ── */
+.work-grid--secondary {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ── SECONDARY CARD ── */
+
+.project-card--secondary .card-tagline {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin: 0 0 12px 0;
+}
+
+.project-card--secondary .card-img {
+  height: 160px;
+}
+
+.project-card--secondary .card-body {
+  padding: 14px 16px 18px;
+}
+
+.project-card--secondary .card-title {
+  font-size: 1rem;
+}
+
+.project-card--secondary .card-desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .work-grid--featured {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .work-grid--secondary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .work-grid--secondary {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ─── LIGHTBOX ───────────────────────────────── */
 .lightbox-overlay {
   position: fixed;

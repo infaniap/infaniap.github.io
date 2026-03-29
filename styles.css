@@ -597,6 +597,19 @@ a.project-card {
     border-bottom: none;
   }
 
+  /* make main nav feel primary */
+  .work-hero .site-nav-right .work-nav-link {
+    font-weight: 500;
+    color: rgba(17, 17, 17, 0.8);
+  }
+
+  /* make social feel secondary */
+  .work-mobile-social .work-nav-link {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: rgba(17, 17, 17, 0.45);
+  }
+
   .work-hero .site-nav-name { font-size: 28px; }
 .work-hero .site-nav-left {
   order: 1;

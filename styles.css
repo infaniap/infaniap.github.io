@@ -598,17 +598,19 @@ a.project-card {
   }
 
   .work-hero .site-nav-name { font-size: 28px; }
-  .work-hero .site-nav-left { order: 1; width: 100%; justify-content: center; }
-  .work-mobile-social {
+.work-hero .site-nav-left {
+  width: 100%;
+  justify-content: center;
+}
+.work-mobile-social {
     display: flex;
-    order: 2;
-    width: 100%;
-    justify-content: center;
-    gap: 28px;
-    padding: 8px 0 12px;
+  width: 100%;
+  justify-content: center;
+  gap: 28px;
+  padding: 8px 0 12px;
+  border-bottom: 1px solid var(--border-color);
   }
   .work-hero .site-nav-right {
-    order: 3;
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;

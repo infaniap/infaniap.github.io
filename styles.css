@@ -578,7 +578,7 @@ a.project-card {
 @media (max-width: 600px) {
   :root { --font-name: 32px; }
 
-  .desktop-only { display: none !important; }
+  .desktop-only { display: inline-flex; }
   .mobile-only { display: flex; }
 
   /* ── INDEX PAGE ── */

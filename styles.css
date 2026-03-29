@@ -37,28 +37,7 @@ body {
   font-size: var(--font-body-sz);
   line-height: 1.7;
 }
-/* ── WORK PAGE ── */
-  .work-mobile-social {
-    display: none;
-  }
 
-  .work-hero .site-nav--page {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 16px 8px;
-    border-bottom: none;
-  }
-
-  .work-hero .site-nav-name {
-    font-size: 28px;
-  }
-
-  .work-hero .site-nav-right {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
 /* ═══════════════════════════════════════════════
    TOP SOCIAL (GitHub / LinkedIn)
    ═══════════════════════════════════════════════ */
@@ -550,7 +529,7 @@ a.project-card {
 /* ═══════════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════════ */
-.desktop-only { display: block; }
+.desktop-only { display: inline-flex; }
 .work-mobile-social { display: none; }
 .mobile-only { display: none; }
 
@@ -575,10 +554,11 @@ a.project-card {
   .hero-band { flex-wrap: wrap; gap: 12px; }
 }
 
+
 @media (max-width: 600px) {
   :root { --font-name: 32px; }
 
-  .desktop-only { display: inline-flex; }
+  .desktop-only { display: none !important; }
   .mobile-only { display: flex; }
 
   /* ── INDEX PAGE ── */

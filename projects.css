@@ -369,16 +369,28 @@
 /* ─── NEXT PROJECT ───────────────────────────── */
 .proj-next {
   border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .proj-next-inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
-  max-width: 860px;
-  margin: 0 auto;
   padding: 48px 0;
+}
+
+/* left (Prev) */
+.proj-next-inner:first-child {
+  align-items: flex-start;
+}
+
+/* right (Next) */
+.proj-next-inner:last-child {
+  align-items: flex-end;
+  text-align: right;
 }
 
 .proj-next-label {

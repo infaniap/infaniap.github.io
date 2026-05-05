@@ -32,7 +32,7 @@
 
   <!-- ── HERO IMAGE ── -->
   <div class="proj-hero-img">
-    <img src="figmaSociaLIGHTICON.jpg" alt="SociaLIGHT wearable devices">
+    <img src="background.png" alt="SociaLIGHT wearable display">
   </div>
 
   <!-- ── PROJECT HEADER ── -->
@@ -63,9 +63,9 @@
       <div class="proj-section-inner">
         <div class="proj-section-label">Overview</div>
         <div class="proj-section-content">
-          <p>Starting conversations with strangers is often avoided not because people do not want to connect, but because the effort of starting feels higher than the effort of staying silent. Phones make that worse by pulling attention inward at the exact moment outward presence matters.</p>
-          <p>SociaLIGHT is a wearable system designed to lower that barrier. Users select a conversation prompt mapped to a color state, then transfer it to the wearable with a single NFC tap. The device displays that state on a quadrant layout others can read at a glance.</p>
-          <p>Built as a Human Factors thesis project, the system was prototyped, deployed, and evaluated in a live social study using about 30 devices. The clearest finding was that visibility mattered more than perfect interpretation.</p>
+          <p>Starting conversations with strangers is often avoided not because people do not want to connect, but because the effort of starting feels higher than the effort of staying silent. Social media has made it easy to find common ground before a conversation starts: shared interests, mutual connections, personal traits all visible before the first word. In person, that context disappears. </p>
+          <p>SociaLIGHT is a wearable system designed to bring that context back into the room. Users select a conversation prompt reflecting a personal trait, behavior, or interest, mapped to a color state, then transfer it to the wearable with a single NFC tap. The device displays that state on a quadrant layout others can read at a glance — no phone, no app, no screen required.</p>
+          <p>Built as a Human Factors and Mechanical Engineering thesis project, the system was evaluated across two prototype iterations, with task completion improving from 33% to 100% and programming time reduced by approximately 83%. In a live behavioral study with 21 participants, those wearing the device reported a significantly greater desire to reconnect with people they met, suggesting the wearable supported connection intent beyond the session itself.</p>
         </div>
       </div>
     </section>
@@ -75,9 +75,44 @@
       <div class="proj-section-inner">
         <div class="proj-section-label">How It Works</div>
         <div class="proj-section-content">
-          <p>A participant selects a physical prompt card. That selection maps to a color state and is transferred to the wearable through a single NFC tap. The display updates immediately, with no phone, pairing, or app flow involved.</p>
-          <p>Others read the signal at a glance and use it as an opening to approach. The device does not mediate the conversation, it reduces the friction of starting one. The quadrant layout supports multiple states without making the interaction harder to use.</p>
-          <p>Input (prompt card) → NFC transfer → Wearable display → Social interpretation.</p>
+          <p>A participant selects a physical prompt card reflecting a personal trait, behavior, or interest. That selection maps to a color state and is transferred to the wearable through a single NFC tap. The display updates immediately, with no phone, pairing, or app flow involved.</p>
+          <p>Each quadrant of the display corresponds to a different prompt category, allowing multiple attributes to be communicated simultaneously. Others read the signal at a glance and use it as an opening to approach.</p>
+          <div class="proj-gallery" style="margin-top: 1.5rem;">
+            <div class="gallery-item" style="grid-column: 1 / -1;">
+              <img src="ShowsColorMapping.png" alt="Color mapping diagram showing quadrant layout and prompt categories" class="gallery-placeholder">
+              <span class="gallery-caption">Each quadrant maps to a prompt category. Each color maps to a response.</span>
+            </div>
+          </div>
+
+          <h3 style="margin-top: 2.5rem; margin-bottom: 1rem;">Hardware</h3>
+          <p>The system evolved from a two-device QR-based workflow in Prototype 1 to a single-device NFC interaction in Prototype 2. Each iteration was driven directly by usability findings from the previous version.</p>
+          <div class="proj-gallery" style="margin-top: 1.5rem;">
+            <div class="gallery-item">
+              <img src="wearableFramed1.png" alt="Prototype 2 wearable CAD interior" class="gallery-placeholder">
+              <span class="gallery-caption">Prototype 2 wearable — interior CAD showing NFC module and component seating</span>
+            </div>
+            <div class="gallery-item">
+              <img src="wearableFramed2.png" alt="Prototype 2 wearable CAD flat views" class="gallery-placeholder">
+              <span class="gallery-caption">Prototype 2 wearable — enclosure CAD views</span>
+            </div>
+            <div class="gallery-item">
+              <img src="wearableButtonSideByFig8.JPG" alt="Prototype 2 wearable side view" class="gallery-placeholder">
+              <span class="gallery-caption">Prototype 2 wearable — side view showing button and charging port</span>
+            </div>
+            <div class="gallery-item">
+              <img src="labeledProgrammerShell.png" alt="Prototype 1 programming station CAD" class="gallery-placeholder">
+              <span class="gallery-caption">Prototype 1 programming station — interior CAD showing LED ring, potentiometer, and button seating</span>
+            </div>
+            <div class="gallery-item">
+              <img src="programmer.png" alt="Prototype 1 programming station exterior" class="gallery-placeholder">
+              <span class="gallery-caption">Prototype 1 programming station — exterior CAD views</span>
+            </div>
+            <div class="gallery-item" style="grid-column: 1 / -1;">
+              <img src="Communicationarchitecture.png" alt="Communication architecture comparison Prototype 1 vs Prototype 2" class="gallery-placeholder">
+              <span class="gallery-caption">Communication architecture — Prototype 1 required 5 steps across 2 devices. Prototype 2 reduced this to 3 steps on a single device.</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -88,6 +123,7 @@
         <div class="proj-section-label">My Role</div>
         <div class="proj-section-content">
           <p>I owned the project end to end, from concept through deployment. I designed the system, prototyped and assembled about 30 wearable devices, wrote the embedded firmware, designed the study, obtained IRB approval, recruited participants, facilitated sessions, and analyzed the results. Pilot behavior and hardware issues directly shaped later design and firmware decisions.</p>
+           <p>I also redesigned the system architecture between iterations, transitioning from a multi-device QR-based workflow to a single-device NFC interaction to simplify setup and improve reliability.</p>
         </div>
       </div>
     </section>
@@ -100,12 +136,24 @@
     <div class="proj-section-content">
       <div class="proj-gallery">
         <div class="gallery-item">
+          <img src="IMG_4297.JPG" alt="SociaLIGHT wearable front view" class="gallery-placeholder">
+          <span class="gallery-caption">Prototype 2 — front view showing quadrant color display</span>
+        </div>
+        <div class="gallery-item">
+          <img src="wearableButtonSideByFig8.JPG" alt="SociaLIGHT wearable side view" class="gallery-placeholder">
+          <span class="gallery-caption">Prototype 2 — side view showing metal push button and lanyard attachment</span>
+        </div>
+        <div class="gallery-item">
+          <img src="woodenprompt.png" alt="Wooden prompt card" class="gallery-placeholder">
+          <span class="gallery-caption">Wooden prompt slat with NFC response tags</span>
+        </div>
+        <div class="gallery-item">
           <img src="entiresystem.jpg" alt="Zodiac prompt card with wearable" class="gallery-placeholder">
           <span class="gallery-caption">Prompt card and wearable — the full interaction in one object</span>
         </div>
         <div class="gallery-item">
-          <img src="close.jpg" alt="Close up" class="gallery-placeholder">
-          <span class="gallery-caption">Prompt card and wearable — the full interaction in one object</span>
+          <img src="programmingstationandwearable_1.png" alt="Prototype 1 system" class="gallery-placeholder">
+          <span class="gallery-caption">Prototype 1 — wearable and shared programming station</span>
         </div>
       </div>
     </div>
@@ -153,8 +201,9 @@
       <div class="proj-section-inner">
         <div class="proj-section-label">Takeaway</div>
         <div class="proj-section-content">
-          <p>People used the device to start conversations even when they were not fully sure what a color meant. The signal did not need to be perfectly legible to be useful, it needed to be visible enough to invite approach.</p>
-          <p>The main gap was learnability. A next version would focus on making the system easier to interpret without adding setup friction, then testing whether the behavior holds outside a structured study setting.</p>
+           <p>SociaLIGHT demonstrated that a wearable system can meaningfully influence how people connect in person. Participants wearing the device reported a significantly greater desire to reconnect with people they met, and interaction quality remained more stable across rounds compared to the control group.</p>
+          <p>The system shifted the challenge from deciding what to say to deciding who to approach, a meaningful change in how people navigated social interactions. That shift points directly to the next design direction: making social receptivity visible, not just personal attributes.</p>
+          <p>The project spanned the full design and engineering arc: concept, hardware iteration, embedded firmware, IRB-approved study design, live deployment, and quantitative analysis. It produced a system that went from 33% task completion to 100% across two prototype iterations and generated statistically significant behavioral findings in a live social study.</p>
         </div>
       </div>
     </section>

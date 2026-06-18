@@ -81,6 +81,15 @@
   border-color: var(--color-dark);
 }
 
+.res-role-summary {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(17, 17, 17, 0.65);
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
 /* ─── BODY ───────────────────────────────────── */
 .res-body {
   padding: 60px 0 100px;
@@ -155,6 +164,7 @@
 }
 
 /* ─── ROLES ──────────────────────────────────── */
+
 .res-role {
   margin: 20px 0 24px 0;
   padding-left: 20px;
@@ -173,7 +183,8 @@
 .res-role-title {
   font-family: var(--font-body);
   font-size: 16px;
-  font-style: italic;
+  font-weight: 600;
+  font-style: normal;
   color: var(--color-dark);
 }
 

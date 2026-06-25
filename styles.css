@@ -926,11 +926,11 @@ a.project-card {
 
   /* ── HERO ── */
   .hero {
-    height: 170px;
+    height: 200px;
     margin-top: -80px;
   }
   .hero-media {
-    transform: translateY(-18%) scale(1.05);
+    transform: translateY(-10%) scale(1.05);
   }
 
   /* ── INDEX PAGE ── */

@@ -163,6 +163,22 @@
   font-style: italic;
 }
 
+.about-photo-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 195px;
+  flex-shrink: 0;
+}
+
+.about-credentials {
+  font-family: var(--font-btn-font);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.45);
+  line-height: 1.8;
+}
 /* ─── ROLES ──────────────────────────────────── */
 
 .res-role {

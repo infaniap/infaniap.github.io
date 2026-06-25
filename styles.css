@@ -928,9 +928,10 @@ a.project-card {
   .hero {
     height: 200px;
     margin-top: -80px;
+    overflow: hidden;
   }
   .hero-media {
-    transform: translateY(-10%) scale(1.05);
+    transform: translateY(0%) scale(1.05);
   }
 
   /* ── INDEX PAGE ── */

@@ -1099,6 +1099,8 @@ a.project-card {
   background: linear-gradient(to bottom, transparent, var(--color-page));
   z-index: 2;
   pointer-events: none;
+  display: none;
+
 }
 
 body { animation: fadeIn 0.3s ease; }

@@ -102,7 +102,7 @@
 
 /* ─── SECTIONS ───────────────────────────────── */
 .res-section {
-  margin-bottom: 52px;
+  margin-bottom: 32px;
 }
 
 .res-section-title {
@@ -178,6 +178,45 @@
   text-transform: uppercase;
   color: rgba(17, 17, 17, 0.45);
   line-height: 1.8;
+}
+
+/* ─── GPA & HONORS ───────────────────────────── */
+.res-degree-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.res-gpa {
+  font-family: var(--font-btn-font);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.res-honor {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: rgba(17, 17, 17, 0.75);
+}
+
+/* ─── SUMMARY & COMPETENCIES ─────────────────── */
+.res-summary-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: #555;
+}
+
+.res-competencies-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 2.1;
+  color: #555;
 }
 /* ─── ROLES ──────────────────────────────────── */
 
